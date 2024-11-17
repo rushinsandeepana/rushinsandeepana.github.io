@@ -1,1 +1,1 @@
-# rushinsandeepana.github.io
+# rushinsandeepana
