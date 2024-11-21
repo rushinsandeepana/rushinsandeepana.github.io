@@ -10445,7 +10445,7 @@ div#featured-project-carousel {
     .rn-nav-list {
       margin-top: 0; } }
   .rn-nav-list .nav-item {
-    flex-basis: 30%;
+    flex-basis: 50%;
     text-align: center;
     margin-top: 0; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -10514,8 +10514,14 @@ div#featured-project-carousel {
       font-size: 24px; } }
 
 .personal-experience-inner .experience-list {
-  padding-left: 31px;
-  border-left: 5px solid #17191c; }
+  padding-right: 31px;
+  border-right: 5px solid #111313; }
+  .personal-experience-inner .experience-list-1 {
+    padding-right: 31px;
+    border-right: 5px solid #111313; }
+    .personal-experience-inner .experience-list-2 {
+      padding-left: 31px;
+      border-left: 5px solid #121213; }
   @media only screen and (max-width: 767px) {
     .personal-experience-inner .experience-list {
       padding-left: 27px; } }
@@ -10525,12 +10531,32 @@ div#featured-project-carousel {
   .personal-experience-inner .experience-list .resume-single-list {
     position: relative;
     z-index: 2;
-    margin-top: 50px;
+    margin-top: 270px;
     padding: 45px 40px;
     border-radius: 6px;
     background: var(--background-color-1);
     box-shadow: var(--shadow-1);
     transition: var(--transition); }
+    .personal-experience-inner .experience-list .resume-single-list-1 {
+      position: relative;
+      z-index: 2;
+      margin-top: 50px;
+      /* top: 270px; */
+      padding: 45px 40px;
+      border-radius: 6px;
+      background: var(--background-color-1);
+      box-shadow: var(--shadow-1);
+      transition: var(--transition); }
+      .personal-experience-inner .experience-list .resume-single-list-2 {
+        position: relative;
+        z-index: 2;
+        margin-top: 370px;
+        /* top: 270px; */
+        padding: 45px 40px;
+        border-radius: 6px;
+        background: var(--background-color-1);
+        box-shadow: var(--shadow-1);
+        transition: var(--transition); }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .personal-experience-inner .experience-list .resume-single-list {
         padding: 30px 25px; } }
@@ -10555,34 +10581,56 @@ div#featured-project-carousel {
       background: linear-gradient(to right bottom, #212428, #16181c);
       opacity: 0;
       z-index: -1; }
-    .personal-experience-inner .experience-list .resume-single-list .inner::after {
+    .personal-experience-inner .experience-list .resume-single-list .inner-1::after {
       position: absolute;
       content: "";
       width: 20px;
       height: 20px;
       border: 5px solid #17191c;
       border-radius: 100%;
-      right: 104%;
+      left: 104%;
       top: 55px;
       transform: translateY(-7px);
       background: #222529;
       transition: var(--transition); }
+      .personal-experience-inner .experience-list .resume-single-list .inner-2::after {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 5px solid #17191c;
+        border-radius: 100%;
+        right: 104%;
+        top: 55px;
+        transform: translateY(-7px);
+        background: #222529;
+        transition: var(--transition); }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .personal-experience-inner .experience-list .resume-single-list .inner::after {
           right: 106%; } }
       @media only screen and (max-width: 479px) {
         .personal-experience-inner .experience-list .resume-single-list .inner::after {
           right: 102%; } }
-    .personal-experience-inner .experience-list .resume-single-list .inner::before {
+    .personal-experience-inner .experience-list .resume-single-list .inner-1::before {
       position: absolute;
       content: "";
       width: 28px;
       height: 5px;
-      right: 100%;
+      left: 100%;
       top: 63px;
       transform: translateY(-7px);
       background: #1b1c1d;
       z-index: 0; }
+      .personal-experience-inner .experience-list .resume-single-list .inner-2::before {
+        position: absolute;
+        content: "";
+        width: 28px;
+        height: 5px;
+        right: 100%;
+        top: 63px;
+        transform: translateY(-7px);
+        background: #1b1c1d;
+        z-index: 0; }
       @media only screen and (max-width: 479px) {
         .personal-experience-inner .experience-list .resume-single-list .inner::before {
           width: 15px; } }
