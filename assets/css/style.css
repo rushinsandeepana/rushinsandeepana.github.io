@@ -8074,6 +8074,9 @@ body.template-color-1 {
 .logo a {
   display: inline-block; }
   .logo a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 70%;
     transition: 0.3s; }
     @media only screen and (max-width: 767px) {
       .logo a img {
@@ -14737,6 +14740,28 @@ body.white-version {
   .logos-slide {
     animation: 50s slide infinite linear; /* Slow down the animation on mobile */
   }
+}
+
+.download-resume .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 17px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0d101339;
+  border-radius: 5px;
+  box-shadow: var(--shadow-1);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-resume .btn:hover {
+  background-color: #d11414;
+}
+
+.download-resume .btn i {
+  margin-right: 5px; /* Add spacing between the icon and text */
 }
 
 
