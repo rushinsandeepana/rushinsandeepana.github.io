@@ -12811,12 +12811,12 @@ div#featured-project-carousel {
         display: flex;
         flex-wrap: wrap;
         align-items: center; }
-        .rn-portfolio .inner .content .category-info .category-list a,
-        .rn-blog .inner .content .category-info .category-list a {
+        .rn-portfolio .inner .content .category-info .category-list h8,
+        .rn-blog .inner .content .category-info .category-list h8 {
           color: var(--color-primary);
-          font-weight: 500;
+          font-weight: 700;
           font-family: var(--font-primary);
-          font-size: 12px;
+          font-size: 14px;
           letter-spacing: 1px;
           text-transform: uppercase;
           display: block; }
@@ -12843,9 +12843,9 @@ div#featured-project-carousel {
       .rn-blog .inner .content .title a {
         transition: var(--transition);
         color: var(--color-lightn);
-        font-weight: 600;
-        font-size: 23px;
-        line-height: 34px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
         display: inline-block; }
         @media only screen and (max-width: 479px) {
           .rn-portfolio .inner .content .title a,
@@ -14602,5 +14602,95 @@ body.white-version {
 
 .white-version .slider-style-6 .cd-headline span {
   color: var(--color-white) !important; }
+  .row p {
+    font-size: 16px;  /* Adjust the font size */
+    line-height: 0.2;     /* Reduce line spacing (default is usually 1.5 or higher) */
+    transition: color 0.3s ease;  /* Add smooth transition for color change */
+}
+
+/* Change text color to red on hover */
+.row p:hover {
+    color: red;  /* Change the color to red on hover */
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 40px 0;
+  /* background: white; */
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(33, 32, 32));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(32, 32, 32));
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 70px;
+  margin: 0 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .logos-slide img {
+    height: 40px; /* Smaller logos on medium screens */
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logos-slide img {
+    height: 35px; /* Even smaller logos for tablets */
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos-slide img {
+    height: 30px; /* Smallest logos for mobile devices */
+    margin: 0 15px;
+  }
+
+  /* Adjust animation duration on small screens for better performance */
+  .logos-slide {
+    animation: 50s slide infinite linear; /* Slow down the animation on mobile */
+  }
+}
+
+
 
 /*# sourceMappingURL=../maps/style.css.map */
