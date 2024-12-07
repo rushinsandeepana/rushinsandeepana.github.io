@@ -14761,7 +14761,24 @@ body.white-version {
 }
 
 .download-resume .btn i {
-  margin-right: 5px; /* Add spacing between the icon and text */
+  margin-right: 5px;
+}
+
+.rounded-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+.github a svg {
+  transition: transform 0.3s ease;
+}
+
+.github a:hover svg {
+  transform: scale(1.1);
+  fill: #333; /* GitHub's dark color */
 }
 
 
